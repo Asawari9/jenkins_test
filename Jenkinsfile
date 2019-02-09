@@ -1,16 +1,16 @@
 pipeline {
   agent none
   stages {
-    stage('asa') {
+    stage('asa2') {
       parallel {
-        stage('asa') {
-          steps {
-            sh ' echo "asawari Awati"'
-          }
-        }
         stage('asa2') {
           steps {
             echo 'done with1'
+          }
+        }
+        stage('asa1') {
+          steps {
+            echo 'asawari d'
           }
         }
       }
